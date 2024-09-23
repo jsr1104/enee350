@@ -11,6 +11,7 @@ result_eq:  .asciiz "Inputs are equal."
 newline:    .asciiz "\n"
 
     .text
+    .globl main
 main:
     # read integer 1 into in1 and store into temporary register 0
     li      $v0, 4  # print_string
