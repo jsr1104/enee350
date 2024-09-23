@@ -3,15 +3,14 @@
 # if your program assembles. Run your program in MARS or QTSPIM and capture the 
 # screenshot of the display. Submit both the program and the screenshot.
 
-.data
+    .data
 prompt1:    .asciiz "Please enter first integer: "
 prompt2:    .asciiz "Please enter second integer: "
 result:     .asciiz "The maximum number is: "
 result_eq:  .asciiz "Inputs are equal."
 newline:    .asciiz "\n"
 
-.text
-
+    .text
 main:
     # read integer 1 into in1 and store into temporary register 0
     li      $v0, 4  # print_string
